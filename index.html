@@ -1,0 +1,41 @@
+<html>
+<head>
+    <link rel="stylesheet" href="index.css">
+    <script src="js/main.js"></script>
+</head>
+<body>
+
+<form  onsubmit="return validate() ">
+    <div class="container">
+    <h1>Register</h1>
+    <p>Please fill in this form to create an account.</p>
+    <hr>
+
+    <label for="email"><b>Email</b></label><br>
+    <input type="text"  placeholder="Enter Email" name="email" id="mail">
+    <span id="e"></span>
+   
+    <br>
+
+    <label for="psw"><b>Password</b></label><br>
+    <input type="password" placeholder="Enter Password" name="psw" id="pass" title="please ensure the passward format 2 Highcaps, 4 or more small caps and 3 or more special char" >
+    <span id="p"></span>
+  
+    <br>
+
+    <label for="psw-repeat"><b>Repeat Password</b></label><br>
+    <input type="password" placeholder="Repeat Password" name="psw-repeat"  id="rpass">
+    <span id="r"></span>
+ 
+    <hr>
+    <p>By creating an account you agree to our Terms & Privacy.</p>
+    <input type="submit" formtarget="_blank" class="registerbtn" value="Submit"><br>
+    <script>
+    function test(){alert('test');document.getElementById('e').innerHTML=" ";}</script>
+    <input type="reset" class="resetbtn" value="Reset" onclick="clear_form()">
+    </div>
+  
+</form>
+
+</body>
+</html>
